@@ -1,0 +1,4 @@
+this project is developed in localhost and it is not optimized fully to be placed online. So as such you need to place this project into your folder in my case using xampp into 
+C:\xampp\htdocs\<Your file name> and you need to add vhost and host if you do not have this setup. If you did set it up then just in browser window type your ulr(exemple my url for
+this project is www.fullstack.loc). Affter that open your PHPMyAdmin and create table whit name "bloger", and import into it file whit name bloger. Affter that you are ready to use app.
+For admin log use email:admin@admin.com pas:admin to log in as admin, and if you want to login as user then just go true register and create your profile and login. Enjoy
