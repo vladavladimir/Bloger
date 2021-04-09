@@ -5,14 +5,14 @@ include_once 'classes/Blog.php';
 $show = new Blog();
 $blogs = $show->getAllBlogs();
 
-if ($blogs == NULL || $blogs == 0 || empty($blogs)) {
+if ($blogs == NULL || $blogs == 0 || empty($blogs)) {//if there is no blogs
 	echo '<p>No blogs jet</p>';
 }else{ ?>
 
 
  <div class="row" data-aos="fade-up" data-aos-delay="100">
   <?php
-foreach ($blogs as $blog){
+foreach ($blogs as $blog){//foreaching data to get all blogs
  ?>
           <div class="col-lg-4 col-md-6">
             <div class="hotel">

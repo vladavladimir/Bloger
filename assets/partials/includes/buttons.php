@@ -1,3 +1,4 @@
+<!-- showing different buttons to different users and log statuses -->
 <li><a class="nav-link scrollto active" href="index.php">Home</a></li>
 <?php if (isset($_SESSION['admin']) && $_SESSION['admin']=='yes'): ?>
 <li><a class="nav-link" href="users_list.php">Users List</a></li>

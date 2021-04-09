@@ -2,10 +2,10 @@
 
 include_once 'classes/Users.php';
 
-if (isset($_POST['loginbtn'])) {
+if (isset($_POST['loginbtn'])) {// geting data when liginbtn is pressed
 	
-	$email = $_POST['email'];
-	$password = $_POST['password'];
+	$email = htmlspecialchars($_POST['email']);
+	$password = htmlspecialchars($_POST['password']);
 
 	if (!$email == '' && !$password == '') {
 		$login = new Users($password);
@@ -13,7 +13,6 @@ if (isset($_POST['loginbtn'])) {
 		if ($chk ) {
 			header('Location: index.php?succ=ok');
 		}
-		
 	}else{
 		header('Location: login.php?error=empfil');
 	}

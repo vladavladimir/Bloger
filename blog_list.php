@@ -10,7 +10,7 @@ include_once 'assets/partials/includes/admin_functions.php';
 
  ?>
 
-<div class="row" style="width: 100%; padding: 50px;">
+<div class="row" id="row">
 	<table class="table">
 		
 	  <thead>
@@ -27,11 +27,11 @@ include_once 'assets/partials/includes/admin_functions.php';
 	  	<?php foreach ($admin_blog as $data): ?>
 	    <tr>
 	      <td><?=$data->title?></td>
-	      <td><?=substr($data->description, 0, 30);?></td>
+	      <td><?=substr($data->description, 0, 60);?></td>
 	      <td><?=$data->created_at?></td>
 	      <td><?=$data->name?> <?=$data->lastname?></td>
 	      <td><?=$data->approved?></td>
-	      <td><form style="display: inline;" method="post" action=""><button type="submit" name="delete" id="delete" class="btn btn-danger" value="<?=$data->id?>">Delete</button></form></td>
+	      <td><form id="form" method="post" action=""><button type="submit" name="delete" id="delete" class="btn btn-danger" value="<?=$data->id?>">Delete</button></form></td>
 	    </tr>
 	    <?php endforeach ?>
 	  </tbody>

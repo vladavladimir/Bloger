@@ -1,5 +1,5 @@
 <?php 
-
+// clasic PDO conection
 class Database
 {
 	

@@ -9,7 +9,7 @@ class Users extends Database
 	public null|string $password;
 	public string $hash;
 
-	public function __construct(null|string $password=null){
+	public function __construct(null|string $password=null){//set to hash blowfish password in PDO
 		$this->password = $password;
 		$this->hash = password_hash($password, PASSWORD_BCRYPT);
 	}
@@ -62,7 +62,7 @@ class Users extends Database
 	}
 
 	public function getAllUsers(){
-
+		// selecting all users and returning it tru variable
 		$db = $this->connection();
 		$stmt = $db->prepare("SELECT id,name,lastname,email FROM users ORDER BY name ASC");
 		$stmt->execute();
@@ -71,7 +71,7 @@ class Users extends Database
 	}	
 
 	public function deleteUserAdmin($id){
-
+		// delete user by admin method
 		$db = $this->connection();
 		$stmt = $db->prepare("DELETE FROM users WHERE id = :id");
 		$stmt->execute(['id'=>$id]);

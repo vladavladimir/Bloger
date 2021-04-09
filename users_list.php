@@ -11,7 +11,7 @@ include_once 'classes/Users.php';
 include_once 'assets/partials/includes/admin_functions.php';
 
  ?>
-<div class="row" style="width: 100%; padding: 50px;">
+<div class="row"  id="row">
 	<table class="table">
 		
 	  <thead>
@@ -28,7 +28,7 @@ include_once 'assets/partials/includes/admin_functions.php';
 	      <td><?=$data->name?></td>
 	      <td><?=$data->lastname?></td>
 	      <td><?=$data->email?></td>
-	      <td><form style="display: inline;" method="post" action=""><button type="submit" name="deleteuser" id="deleteuser" class="btn btn-danger" value="<?=$data->id?>">Delete</button></form></td>
+	      <td><form id="form" method="post" action=""><button type="submit" name="deleteuser" id="deleteuser" class="btn btn-danger" value="<?=$data->id?>">Delete</button></form></td>
 	    </tr>
 	    <?php endforeach ?>
 	  </tbody>

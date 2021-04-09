@@ -4,7 +4,7 @@ include_once 'classes/Database.php';
 
 class Blog extends Database
 {
-	
+	// method for creating Blog
 	public function createBlog($title,$description,$id){
 		$db = $this->connection();
 		$currentTime = date('Y-m-d h:i:s');
@@ -15,6 +15,7 @@ class Blog extends Database
 	}
 
 	public function updateBlog($id,$picture){
+		// method to insert picture into blog it gets id from method createBlog
 		$db = $this->connection();
 		$stmt = $db->prepare("UPDATE blogs SET picture = :picture  WHERE id = :id");
 		$stmt->execute(['id'=>$id,'picture'=>$picture]);
@@ -22,7 +23,7 @@ class Blog extends Database
 	}
 
 	public function getAllBlogs(){
-
+		// method toget all blogs ther are approved
 		$db = $this->connection();
 		$stmt = $db->prepare("SELECT b.title, b.picture, b.id, b.created_at, u.name, u.lastname, u.email FROM blogs b JOIN users u ON b.user_id = u.id WHERE b.approved='yes' ORDER BY b.created_at DESC");
 		$stmt->execute();
@@ -31,7 +32,7 @@ class Blog extends Database
 	}
 
 	public function getSingleBlog($id){
-
+		// method to get single Blog by id
 		$db = $this->connection();
 		$stmt = $db->prepare("SELECT b.picture, b.title, b.id, b.description, b.created_at, u.name, u.lastname FROM blogs b JOIN users u ON b.user_id = u.id WHERE b.id = :id");
 		$stmt->execute(['id'=>$id]);
@@ -40,16 +41,16 @@ class Blog extends Database
 	}
 
 	public function getAllMyBlogs($id){
-
-	$db = $this->connection();
-	$stmt = $db->prepare("SELECT * FROM blogs WHERE user_id = :id");
-	$stmt->execute(['id'=>$id]);
-	$my_result = $stmt->fetchAll(PDO::FETCH_OBJ);
-	return $my_result;
+		// method to get all blogs by user id for user
+		$db = $this->connection();
+		$stmt = $db->prepare("SELECT * FROM blogs WHERE user_id = :id");
+		$stmt->execute(['id'=>$id]);
+		$my_result = $stmt->fetchAll(PDO::FETCH_OBJ);
+		return $my_result;
 	}
 
 	public function upateMyBlog($title,$description,$id){
-
+		// method to update users blog by user id and it is seting approved to no 
 		$db = $this->connection();
 		$currentTime = date('Y-m-d h:i:s');
 		$app = 'no';
@@ -59,7 +60,7 @@ class Blog extends Database
 	}
 
 	public function deleteBlog($id){
-
+		// delete blog
 		$db = $this->connection();
 		$stmt = $db->prepare("DELETE FROM blogs WHERE id = :id");
 		$stmt->execute(['id'=>$id]);
@@ -67,7 +68,7 @@ class Blog extends Database
 	}
 
 	public function getAllBlogsAdmin(){
-
+		// admin geting all blogs approved or not
 		$db = $this->connection();
 		$stmt = $db->prepare("SELECT b.title, b.picture, b.id, b.created_at,b.description,b.approved, u.name, u.lastname, u.email FROM blogs b JOIN users u ON b.user_id = u.id ORDER BY b.created_at DESC");
 		$stmt->execute();
@@ -76,7 +77,7 @@ class Blog extends Database
 	}
 
 	public function getNotApprovedBlogs(){
-
+		// admin method to see all unapproved blogs 
 		$db = $this->connection();
 		$stmt = $db->prepare("SELECT b.id, b.title, b.description, b.created_at, b.approved, u.name, u.lastname FROM blogs b JOIN users u ON b.user_id = u.id WHERE approved = 'no'");
 		$stmt->execute();
@@ -86,7 +87,7 @@ class Blog extends Database
 	}
 
 	public function approveBlog($id){
-
+		// admin method to approve blogs
 		$db = $this->connection();
 		$approved = 'yes';
 		$stmt = $db->prepare("UPDATE blogs SET approved = :approved WHERE id = :id");

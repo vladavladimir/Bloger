@@ -1648,3 +1648,15 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
   font-size: 38px;
 }
+
+#form{
+  display: inline;
+}
+
+#row{
+  width: 100%; 
+  padding: 50px;
+}
+
+
+

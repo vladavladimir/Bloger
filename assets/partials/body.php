@@ -1,93 +1,73 @@
 <!-- ======= Hotels Section ======= -->
     <section id="hotels" class="section-with-bg">
-
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Blogs</h2>
           <p>Read about everything and enything heare...</p>
         </div>
-
         <?php include_once 'assets/partials/includes/all_blogs.php'; ?>
     </section><!-- End Hotels Section -->
 
     <!-- ======= Supporters Section ======= -->
     <section id="supporters" class="section-with-bg">
-
       <div class="container" data-aos="fade-up">
         <div class="section-header">
           <h2>Sponsors</h2>
         </div>
-
         <div class="row no-gutters supporters-wrap clearfix" data-aos="zoom-in" data-aos-delay="100">
-
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <img src="assets/img/supporters/1.png" class="img-fluid" alt="">
             </div>
           </div>
-
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <img src="assets/img/supporters/2.png" class="img-fluid" alt="">
             </div>
           </div>
-
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <img src="assets/img/supporters/3.png" class="img-fluid" alt="">
             </div>
           </div>
-
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <img src="assets/img/supporters/4.png" class="img-fluid" alt="">
             </div>
           </div>
-
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <img src="assets/img/supporters/5.png" class="img-fluid" alt="">
             </div>
           </div>
-
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <img src="assets/img/supporters/6.png" class="img-fluid" alt="">
             </div>
           </div>
-
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <img src="assets/img/supporters/7.png" class="img-fluid" alt="">
             </div>
           </div>
-
           <div class="col-lg-3 col-md-4 col-xs-6">
             <div class="supporter-logo">
               <img src="assets/img/supporters/8.png" class="img-fluid" alt="">
             </div>
           </div>
-
         </div>
-
       </div>
-
     </section><!-- End Sponsors Section -->
 
     <!-- =======  F.A.Q Section ======= -->
     <section id="faq">
-
       <div class="container" data-aos="fade-up">
-
         <div class="section-header">
           <h2>F.A.Q </h2>
         </div>
-
         <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-9">
-
             <ul class="faq-list">
-
               <li>
                 <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">What is Lorem Ipsum? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                 <div id="faq1" class="collapse" data-bs-parent=".faq-list">
@@ -96,7 +76,6 @@
                   </p>
                 </div>
               </li>
-
               <li>
                 <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Why do we use it? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                 <div id="faq2" class="collapse" data-bs-parent=".faq-list">
@@ -105,18 +84,15 @@
                   </p>
                 </div>
               </li>
-
               <li>
                 <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Where does it come from? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                 <div id="faq3" class="collapse" data-bs-parent=".faq-list">
                   <p>
                     Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
-
                     <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
                   </p>
                 </div>
               </li>
-
               <li>
                 <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">The standard Lorem Ipsum passage, used since the 1500s <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                 <div id="faq4" class="collapse" data-bs-parent=".faq-list">
@@ -125,7 +101,6 @@
                   </p>
                 </div>
               </li>
-
               <li>
                 <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                 <div id="faq5" class="collapse" data-bs-parent=".faq-list">
@@ -134,7 +109,6 @@
                   </p>
                 </div>
               </li>
-
               <li>
                 <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
                 <div id="faq6" class="collapse" data-bs-parent=".faq-list">
@@ -143,25 +117,15 @@
                   </p>
                 </div>
               </li>
-
             </ul>
-
           </div>
         </div>
-
       </div>
-
     </section><!-- End  F.A.Q Section -->
-
-    
-
-   
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="section-bg">
-
       <div class="container" data-aos="fade-up">
-
         <div class="section-header">
           <h2>Contact Us</h2>
           <p>Send us email and we might answere, you never know</p>
@@ -176,7 +140,6 @@
               <address>Everywhere and Nowhere</address>
             </div>
           </div>
-
           <div class="col-md-4">
             <div class="contact-phone">
               <i class="bi bi-phone"></i>
@@ -184,7 +147,6 @@
               <p><a href="tel:+155895548855">+381 555 333</a></p>
             </div>
           </div>
-
           <div class="col-md-4">
             <div class="contact-email">
               <i class="bi bi-envelope"></i>
@@ -192,10 +154,7 @@
               <p><a href="mailto:info@example.com">info@bloger.com</a></p>
             </div>
           </div>
-
         </div>
-
       </div>
     </section><!-- End Contact Section -->
-
   </main><!-- End #main -->

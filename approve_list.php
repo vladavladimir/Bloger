@@ -12,9 +12,9 @@ include_once 'assets/partials/includes/admin_functions.php';
 
  
  if ($blogs == NULL || $blogs == 0 || empty($blogs)) {
-	echo '<p>No blogs jet</p>';
+	echo '<p>No blogs to approv jet</p>';
 }else{?>
-<div class="row" style="width: 100%; padding: 50px;">
+<div class="row" id="row">
 	<table class="table">
 		
 	  <thead>
@@ -37,7 +37,7 @@ include_once 'assets/partials/includes/admin_functions.php';
 	      <td><?=$data->created_at?></td>
 	      <td><?=$data->name?> <?=$data->lastname?></td>
 	      <td><?=$data->approved?></td>
-	      <td><form style="display: inline;" method="post" action=""><button type="submit" name="approve" id="approve" class="btn btn-success" value="<?=$data->id?>">Approve Blog</button></form></td>
+	      <td><form id="form" method="post" action=""><button type="submit" name="approve" id="approve" class="btn btn-success" value="<?=$data->id?>">Approve Blog</button></form></td>
 	    </tr>
 	    <?php endforeach ?>
 	  </tbody>

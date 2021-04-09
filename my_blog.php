@@ -10,7 +10,7 @@ include_once 'assets/partials/includes/my_blog_functions.php';
 
  ?>
 
-<div class="row" style="width: 100%; padding: 50px;">
+<div class="row" id="row">
 	<table class="table">
 		
 	  <thead>
@@ -29,7 +29,7 @@ include_once 'assets/partials/includes/my_blog_functions.php';
 	      <td><?=substr($data->description, 0, 30);?></td>
 	      <td><?=$data->created_at?></td>
 	      <td><?=$data->approved?></td>
-	      <td><a class="btn btn-warning" href="edit_blog.php?id=<?=$data->id?>" role="button">Edit</a> <form style="display: inline;" method="post" action=""><button type="submit" name="delete" id="delete" class="btn btn-danger" value="<?=$data->id?>">Delete</button></form></td>
+	      <td><a class="btn btn-warning" href="edit_blog.php?id=<?=$data->id?>" role="button">Edit</a> <form id="form" method="post" action=""><button type="submit" name="delete" id="delete" class="btn btn-danger" value="<?=$data->id?>">Delete</button></form></td>
 	    </tr>
 	    <?php endforeach ?>
 	  </tbody>

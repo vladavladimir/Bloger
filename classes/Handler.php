@@ -1,9 +1,11 @@
 <?php
+
+// error and succes handler
 class Handler
 {
 
 	public function errorMsg(string $arg):void{
-
+		// error handlers
 		if(isset($_GET['error']) && $_GET['error'] == $arg){
 			if ($arg == 'email') {
 				echo "<script>alert('Email is allready in use pls use another email')</script>";
@@ -34,6 +36,7 @@ class Handler
 
 	public function succMsg($log):void
 	{
+		// success handler
 		if (isset($_GET['succ']) && $_GET['succ'] == $log) {
 			if ($log == 'reg') {
 				echo "<script>alert('You have Register, now just login')</script>";
