@@ -6,17 +6,15 @@
 
           <div class="col-lg-4 col-md-6 footer-info">
             <img src="assets/img/logo.png" alt="TheEvenet">
-            <p>In alias aperiam. Placeat tempore facere. Officiis voluptate ipsam vel eveniet est dolor et totam porro. Perspiciatis ad omnis fugit molestiae recusandae possimus. Aut consectetur id quis. In inventore consequatur ad voluptate cupiditate debitis accusamus repellat cumque.</p>
+            <p>Write your blogs like you want. Express yourself to full extent. Just be nice and do not use bad language and racial slures. Do not place neaked or some other pictures. Everythig that is not ok will be filterd by our admins and not approved and will be deleted. Have fun.. </p>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="index.php">Home</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="terms.php">Terms of service</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="privacy.php">Privacy policy</a></li>
             </ul>
           </div>
 
@@ -25,11 +23,10 @@
           <div class="col-lg-4 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
+              Everywhere and Nowhere<br>
+              Online<br>
+              <strong>Phone:</strong> +381 555 333<br>
+              <strong>Email:</strong> info@bloger.com<br>
             </p>
 
             <div class="social-links">
